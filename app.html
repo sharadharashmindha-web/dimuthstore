@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dimuth Top-Up Store</title>
+<style>
+body{
+font-family:Arial;
+background:#0f172a;
+color:white;
+text-align:center;
+margin:0;
+}
+
+header{
+background:#2563eb;
+padding:20px;
+font-size:28px;
+}
+
+.container{
+width:90%;
+margin:auto;
+}
+
+.box{
+background:#1e293b;
+margin:20px;
+padding:20px;
+border-radius:12px;
+}
+
+input{
+padding:10px;
+width:200px;
+border:none;
+border-radius:6px;
+}
+
+button{
+background:#22c55e;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+body{
+font-family:Arial;
+background:url('bg.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+color:white;
+text-align:center;
+margin:0;
+}
+
+
+
+footer{
+margin-top:30px;
+padding:10px;
+background:#111827;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+💎 Dimuth Top-Up Store
+</header>
+
+<div class="container">
+
+<div class="box">
+<h3>Enter Player ID</h3>
+<input type="text" id="playerid" placeholder="Player ID">
+</div>
+
+<div class="box">
+<h2>100 Diamonds</h2>
+<button onclick="order('100 Diamonds')">Order</button>
+</div>
+
+<div class="box">
+<h2>310 Diamonds</h2>
+<button onclick="order('310 Diamonds')">Order</button>
+</div>
+
+<div class="box">
+<h2>520 Diamonds</h2>
+<button onclick="order('520 Diamonds')">Order</button>
+</div>
+
+<div class="box">
+<h2>1060 Diamonds</h2>
+<button onclick="order('1060 Diamonds')">Order</button>
+</div>
+
+</div>
+
+<footer>
+Contact: 0763438136
+</footer>
+
+<script>
+function order(item){
+var id=document.getElementById("playerid").value;
+var phone="94763438136";
+var msg="Hello Dimuth Top-Up Store. I want "+item+" Player ID: "+id;
+window.open("https://wa.me/"+phone+"?text="+encodeURIComponent(msg));
+}
+</script>
+
+</body>
+</html>
